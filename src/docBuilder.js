@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-unused-vars */
 // ─── WORD DOCUMENT BUILDER ───────────────────────────────────────────────────
 // Assembles the 5-page Country at a Glance .docx using the docx library.
 // All layout decisions are here — stats.js and charts.js are pure data/render.
@@ -6,7 +9,7 @@
 import {
   Document, Packer, Paragraph, TextRun, ImageRun, Table, TableRow, TableCell,
   AlignmentType, BorderStyle, WidthType, ShadingType, PageBreak,
-  HeadingLevel, UnderlineType, LevelFormat,
+  LevelFormat,
 } from "docx";
 import { saveAs } from "file-saver";
 import { computeStats, generateStatNotes, generateDataGaps } from "./stats";
@@ -21,7 +24,6 @@ const WHITE  = "ffffff";
 const GOLD   = "c2790a";
 const RED    = "b91c1c";
 const GREEN  = "0e7a3e";
-const PURPLE = "6d28d9";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 const run   = (text, opts = {}) => new TextRun({ text, font: "Calibri", size: opts.size ?? 20, ...opts });
